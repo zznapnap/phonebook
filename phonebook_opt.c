@@ -23,10 +23,6 @@ entry *append(char lastName[], entry *e)
     strcpy(e->lastName, lastName);
     e->pNext = NULL;
 
-    data *pData;
-    pData = (data *) malloc(sizeof(data));
-    e->pData = pData;
-
     return e;
 }
 
